@@ -16,5 +16,43 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body></body>
+  <body>
+    <div
+      class="d-flex border-bottom gap-3 align-items-center p-2 px-4 bg-primary text-white"
+    >
+      <!-- gap-3 เพิ่มระยะห่างของแต่ละอันใช้คู่กับ d-flex -->
+      <!-- align-items-center อยู่ตรงกลางจอใช้คู่กับ d-flex -->
+      <!-- bg-primary เพิ่มสีให้พื้นหลัง -->
+      <!-- text-white เปลี่ยนสีข้อความเป็นขาว -->
+      <h3>My Social Media</h3>
+      <a href="#" class="text-white d-none d-sd-block">Profile</a>
+      <a href="#" class="text-white d-none d-sd-block">Gallery</a>
+      <a href="#" class="me-auto text-white d-none d-sd-block">Setting</a>
+      <!-- me-auto ดันให้อยู่ด้านขวาสุด ms ดันไปซ้าย-->
+      <span class="d-none d-md-block">Hi Chayanin!</span>
+      <!-- d-none ให้ซ่อนเสมอ ใช้คู่กับ d-md-block ถ้าใหญ่กว่าขนาดที่กำหนดจะแสดง -->
+      <button class="btn btn-light d-none d-sd-block">Logout</button>
+      <botton class="btn btn-light d-sm-none ms-auto">
+        <!-- d-sm-none ตั้งแต่ small ขึ้นไปให้ซ่อน -->
+        <!-- พิมพ์ว่า tabler icons -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-menu-2"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M4 6l16 0"></path>
+          <path d="M4 12l16 0"></path>
+          <path d="M4 18l16 0"></path>
+        </svg>
+      </botton>
+    </div>
+  </body>
 </html>
